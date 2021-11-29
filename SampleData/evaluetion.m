@@ -3,14 +3,14 @@ iter = 1;
 uBB = itersdata(iter).uBB_CFR;
 yBB = itersdata(iter).yBB;
 xBB = itersdata(iter).xBB;
-U1 = MemoryPolynomial(uBB, 5, 3);
+U1 = MemoryPolynomial(uBB,5,3);
 w1 = U1\yBB;
 % w = U\e, e = y - u
 yest1 = U1*w1;
 
-% dpd_Qmeasurements(yBB,yest,'NMSE')
+% dpd_Qmeasurements(yBB,yest1,'NONORM+NMSE')
 
-U2 = GMemoryPolynomial(uBB, 5,3,2,3,2,2,3,1);
+U2 = GMemoryPolynomial(uBB,5,3,2,3,3,2,2,2);
 w2 = U2\yBB;
 % w = U\e, e = y - u
 yest2 = U2*w2;
