@@ -36,4 +36,4 @@ function [U] = GMemoryPolynomial(uBB,Ma,Pa,Mb,Pb,Lb,Mc,Pc,Lc)
        end
     end 
     
-    end
+end
