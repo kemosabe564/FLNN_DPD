@@ -1,5 +1,5 @@
 function [U] = GMemoryPolynomial(uBB,Ma,Pa,Mb,Pb,Lb,Mc,Pc,Lc)
-    %MEMORYPOLYNOMIAL Example of memory polynomial
+    % GMEMORYPOLYNOMIAL Example of gernal memory polynomial
     U=zeros(length(uBB),((Ma*Pa)+(Mb*Pb*Lb)+(Mc*Pc*Lc)));
     i=1;   
     % MP part
